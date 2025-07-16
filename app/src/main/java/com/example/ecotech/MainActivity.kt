@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        // 화면 안전 영역 처리
+        // 화면 안전 영역 처리부분
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val sysBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(sysBars.left, sysBars.top, sysBars.right, sysBars.bottom)
